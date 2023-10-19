@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const List = styled.ul`
-  font-size: 18px;
+  font-size: ${p => p.theme.spacing(4)};
 `;
 export const Items = styled.li`
   margin-bottom: 5px;
@@ -10,7 +10,7 @@ export const Items = styled.li`
   }
 `;
 export const DeleteButton = styled.button`
-  margin-left: 15px;
+  margin-left: ${p => p.theme.spacing(4)};
   background-color: #0a0a23;
   color: #fff;
   border: none;
